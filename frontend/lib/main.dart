@@ -63,8 +63,14 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                   height: 200,
                   width: 200,
                   color: Colors.green.shade200,
-                  child: const Center(child: Text("Logo Here")),
+                  child: Center(
+                    child: Image.asset(
+                      "assets/images/fnl (1).png",
+                      fit: BoxFit.contain,
+                    ),
+                  ),
                 ),
+
                 const SizedBox(height: 40),
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(
